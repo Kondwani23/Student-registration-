@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Student information</title>
+
+	<div class="searching">
+		<nav>
+		<ul>><form action="search.php" method="POST">
+		<div class="searchbox">
+		<input  type="text" name="search" placeholder="Search Number or Name"><br><br>
+		</div>
+	     <input class="sear" type="submit" name="sub" value="Search">
+
+		</form>
+
+		<form action="update/updateinfo.html">
+			<input class="sear" type="submit" name="up" value="Update info"><br>
+
+		</form>
+		<form action="show/showinfo.html">
+			<input class="sear" type="submit" name="up" value="Show info"><br>
+
+		</form>
+		<form action="mode.php">
+			<input class="sear" type="submit" name="up" value="Mode of Study"><br>
+
+		</form>
+		<form action="stats.php">
+			<input class="sear" type="submit" name="up" value="Student Stats"><br>
+
+		</form>
+		<form action="show/showall.php">
+			<input class="sear" type="submit" name="up" value="Show all students"><br>
+
+		</form>
+		<form action="delete/del.html">
+			<input class="sear" type="submit" name="up" value="Delete students data"><br>
+
+		</form>
+		</nav>
+	</div>
+
+
+</head>
+<body>
+	   
+	<div class="login-box">
+		
+	 <form action="submit.php" method="POST" id="frm">
+	 	<h2>ENTER YOUR </h2>
+	 	
+	 	<div class="textbox">
+         	<input type="text" name="id"   placeholder="ID"/ required><br><br>
+         </div>
+	 	<div class="textbox">
+	 		<input type="text" name="studentno" placeholder="Student Number"/ required><br><br>
+	 	</div>
+		 <div class="textbox">
+		 	<input type="text" name="year"  placeholder="Year"/ required><br><br>
+		 </div>
+         <div class="textbox">
+         	<input type="text" name="semester"  placeholder="Semester"/ required><br><br>
+         </div>
+         <div class="textbox">
+         	<input type="text" name="program"  placeholder="Program"/ required ><br><br>
+         </div>
+
+		</form>
+	<br><br></div>
+	    <div class="another">
+	    	
+	    	<form>
+	    		<h2>DETAILS</h2>
+         <div class="textbox">
+         	<input type="text" name="courseno"   placeholder="Course ID"/ required><br><br>
+         </div>
+         <div class="textbox">
+         	<input type="text" name="test1"   placeholder="Test 1"/ required><br><br>
+         </div>
+         <div class="textbox">
+         	<input type="text" name="test2"   placeholder="Test 2"/ required><br><br>
+         </div>
+         <div class="textbox">
+         	<input type="text" name="total"   placeholder="Total"/ required><br><br>
+         </div>
+         <div class="textbox">
+         	<input type="text" name="grade"   placeholder="Grade"/ required><br><br>
+         </div>
+		 
+           <br><br><input class="btn" type="submit" name="submit" value="Submit"> 
+         
+		
+
+     </form>
+ 
+</div> 
+</body>
+</html>
